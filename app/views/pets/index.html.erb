@@ -1,0 +1,11 @@
+<div class="container mt-10">
+    <h1>Pets List 🐶 </h1>
+    <ul>
+        <% @pets.each do |pet| %>
+            <li><%= pet.name %></li>
+
+        <% end %>
+    </ul>
+
+    <%= link_to "Add New Pet", new_pet_path %>
+</div>
